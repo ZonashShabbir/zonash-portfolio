@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zonash Shabbir | CS Student & Web Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">
+      <span class="brand-dot"></span>
+      <span>Zonash Shabbir</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#intro"        class="nav-link">Intro</a></li>
+      <li><a href="#background"  class="nav-link">Background</a></li>
+      <li><a href="#projects"    class="nav-link">Projects</a></li>
+      <li><a href="#skills"      class="nav-link">Skills</a></li>
+      <li><a href="#experience"  class="nav-link">Experience</a></li>
+      <li><a href="#testimonials"class="nav-link">Testimonials</a></li>
+      <li><a href="#blog"        class="nav-link">Blog</a></li>
+      <li><a href="#achievements"class="nav-link">Achievements</a></li>
+      <li><a href="#contact"     class="nav-link">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ===== HERO / INTRO ===== -->
+  <section class="hero" id="intro">
+    <div class="hero-bg">
+      <div class="hero-circle c1"></div>
+      <div class="hero-circle c2"></div>
+      <div class="hero-circle c3"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal">Hello, I'm</p>
+      <h1 class="hero-name reveal">Zonash Shabbir</h1>
+      <p class="hero-role reveal">
+        <span class="typed-text" id="typedText"></span>
+        <span class="cursor">|</span>
+      </p>
+      <p class="hero-bio reveal">
+        I am a 4th semester Computer Science student at Air University, Islamabad,
+        passionate about software development and web technologies. I turn ideas into
+        real solutions through clean, functional code and continuous learning.
+      </p>
+      <div class="hero-btns reveal">
+        <a href="#projects" class="btn btn-primary">
+          <i class="fas fa-code-branch"></i> View My Projects
+        </a>
+        <a href="#contact" class="btn btn-outline">
+          <i class="fas fa-paper-plane"></i> Contact Me
+        </a>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="stat">
+          <span class="stat-num" data-target="2">0</span>
+          <span class="stat-label">Projects</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="7">0</span>
+          <span class="stat-label">Technologies</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="4">0</span>
+          <span class="stat-label">Semesters</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-image reveal">
+      <div class="avatar-ring">
+        <div class="avatar-inner">
+          <span class="avatar-initials">ZS</span>
+        </div>
+      </div>
+      <div class="floating-badge b1"><i class="fab fa-html5"></i> HTML5</div>
+      <div class="floating-badge b2"><i class="fab fa-js"></i> JavaScript</div>
+      <div class="floating-badge b3"><i class="fas fa-code"></i> C++</div>
+    </div>
+  </section>
+
+  <!-- ===== BACKGROUND ===== -->
+  <section class="section" id="background">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">My Story</span>
+        <h2 class="section-title">Education & Training</h2>
+      </div>
+      <div class="bg-grid">
+
+        <!-- Education -->
+        <div class="bg-card reveal">
+          <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
+          <h3>Education</h3>
+          <div class="timeline">
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-content">
+                <span class="tl-year">Sep 2024 – Present</span>
+                <h4>BS Computer Science</h4>
+                <p>Air University, Islamabad, Pakistan</p>
+                <p class="tl-note">Currently in 4th Semester · EQF Level 6</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="lang-block">
+            <h4><i class="fas fa-language"></i> Languages</h4>
+            <div class="lang-chips">
+              <div class="lang-chip">
+                <span class="lang-name">Urdu</span>
+                <span class="lang-level native">Native</span>
+              </div>
+              <div class="lang-chip">
+                <span class="lang-name">English</span>
+                <span class="lang-level fluent">Fluent</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- About & Interests -->
+        <div class="bg-card reveal">
+          <div class="card-icon"><i class="fas fa-user-astronaut"></i></div>
+          <h3>About Me</h3>
+          <p class="about-text">
+            I have developed a solid understanding of programming fundamentals and
+            gained hands-on experience in multiple languages including C++, Java,
+            HTML, CSS, and JavaScript — and I'm currently enhancing my skills in C#.
+          </p>
+          <p class="about-text">
+            I am highly motivated to continuously learn, strengthen my problem-solving
+            abilities, and apply my knowledge in practical environments through
+            internships and real-world projects.
+          </p>
+
+          <h4 class="interests-title"><i class="fas fa-heart"></i> Hobbies & Interests</h4>
+          <div class="interest-list">
+            <div class="interest-item">
+              <i class="fas fa-microchip"></i>
+              Exploring new technologies &amp; programming languages
+            </div>
+            <div class="interest-item">
+              <i class="fas fa-robot"></i>
+              Artificial Intelligence &amp; Machine Learning concepts
+            </div>
+            <div class="interest-item">
+              <i class="fas fa-puzzle-piece"></i>
+              Solving coding problems &amp; logical puzzles
+            </div>
+            <div class="interest-item">
+              <i class="fas fa-laptop-code"></i>
+              Building personal coding projects to improve skills
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="section section-dark" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">My Work</span>
+        <h2 class="section-title">Featured Projects</h2>
+      </div>
+      <div class="filter-btns">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="cpp">C++ / Java</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card reveal" data-category="cpp">
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-shield-halved"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/ZonashShabbir/CrimePatternSystem"
+                 target="_blank" title="View on GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <h3>Crime Management System</h3>
+          <p>
+            A data-structure-intensive system built to manage and analyse crime
+            patterns. The project implements advanced graph and tree algorithms in
+            C++ for efficient data organisation, combined with Java for the
+            application layer.
+          </p>
+          <div class="project-role"><i class="fas fa-user-tag"></i> Solo Developer</div>
+          <div class="project-duration">
+            <i class="fas fa-calendar-alt"></i> Sep 2025 – Dec 2025
+          </div>
+          <div class="project-tech">
+            <span>C++</span><span>Java</span><span>Graphs</span><span>Trees</span>
+          </div>
+          <div class="project-outcome">
+            <i class="fas fa-chart-line"></i> Applied DSA concepts in a real-world system
+          </div>
+          <a href="https://github.com/ZonashShabbir/CrimePatternSystem"
+             target="_blank" class="project-github-btn">
+            <i class="fab fa-github"></i> View on GitHub
+          </a>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card reveal" data-category="cpp">
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-book-open"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/ZonashShabbir/Libarary-Management-system"
+                 target="_blank" title="View on GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <h3>Library Management System</h3>
+          <p>
+            A fully functional Library Management System that handles book records,
+            member management, issue and return tracking, and search functionality.
+            Designed with clean architecture and efficient data handling.
+          </p>
+          <div class="project-role"><i class="fas fa-user-tag"></i> Solo Developer</div>
+          <div class="project-duration">
+            <i class="fas fa-calendar-alt"></i> Mar 2026 – Apr 2026
+          </div>
+          <div class="project-tech">
+            <span>C#</span><span>Java</span><span>OOP</span>
+          </div>
+          <div class="project-outcome">
+            <i class="fas fa-chart-line"></i> Full CRUD operations implemented
+          </div>
+          <a href="https://github.com/ZonashShabbir/Libarary-Management-system"
+             target="_blank" class="project-github-btn">
+            <i class="fab fa-github"></i> View on GitHub
+          </a>
+        </div>
+
+        <!-- Project 3 — Web (current internship task) -->
+        <div class="project-card reveal" data-category="web">
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-user-circle"></i></div>
+            <div class="project-links">
+              <a href="#" title="View on GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3>Personal Portfolio Website</h3>
+          <p>
+            A fully responsive personal portfolio built from scratch using HTML, CSS,
+            and JavaScript. Features include animated sections, project filtering,
+            skill bars, typed text effect, and a working contact form.
+          </p>
+          <div class="project-role"><i class="fas fa-user-tag"></i> Solo Developer</div>
+          <div class="project-duration">
+            <i class="fas fa-calendar-alt"></i> Apr 2026
+          </div>
+          <div class="project-tech">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <div class="project-outcome">
+            <i class="fas fa-chart-line"></i> Internship Task — 1st Project
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title">Technical Skills</h2>
+      </div>
+      <div class="skills-wrapper">
+
+        <div class="skills-col reveal">
+          <h3 class="skills-col-title"><i class="fas fa-code"></i> Programming Languages</h3>
+          <div class="skill-bar-list">
+            <div class="skill-bar-item">
+              <div class="skill-label"><span>HTML / CSS</span><span>85%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-label"><span>JavaScript</span><span>75%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-width="75"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-label"><span>C++</span><span>80%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-label"><span>Java</span><span>70%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-width="70"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-label"><span>C# (Learning)</span><span>55%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-width="55"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-col reveal">
+          <h3 class="skills-col-title"><i class="fas fa-toolbox"></i> Tools & Frameworks</h3>
+          <div class="tools-grid">
+            <div class="tool-chip"><i class="fab fa-html5"></i> HTML5</div>
+            <div class="tool-chip"><i class="fab fa-css3-alt"></i> CSS3</div>
+            <div class="tool-chip"><i class="fab fa-js-square"></i> JavaScript</div>
+            <div class="tool-chip"><i class="fab fa-bootstrap"></i> Bootstrap</div>
+            <div class="tool-chip"><i class="fab fa-github"></i> GitHub</div>
+            <div class="tool-chip"><i class="fab fa-git-alt"></i> Git</div>
+            <div class="tool-chip"><i class="fas fa-terminal"></i> VS Code</div>
+            <div class="tool-chip"><i class="fas fa-sitemap"></i> OOP</div>
+            <div class="tool-chip"><i class="fas fa-diagram-project"></i> DSA</div>
+          </div>
+
+          <h3 class="skills-col-title mt-20"><i class="fas fa-brain"></i> Soft Skills</h3>
+          <div class="soft-skills">
+            <span>Problem Solving</span>
+            <span>Quick Learner</span>
+            <span>Team Player</span>
+            <span>Communication</span>
+            <span>Adaptability</span>
+            <span>Time Management</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section class="section section-dark" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Journey So Far</span>
+        <h2 class="section-title">Experience</h2>
+      </div>
+      <div class="exp-timeline">
+
+        <div class="exp-item reveal">
+          <div class="exp-marker">
+            <div class="exp-dot"></div>
+            <div class="exp-line"></div>
+          </div>
+          <div class="exp-card">
+            <div class="exp-header">
+              <div>
+                <h3>Web Development Intern</h3>
+                <p class="exp-company"><i class="fas fa-building"></i> Internship Program — 2025</p>
+              </div>
+              <span class="exp-date">2025 – Present</span>
+            </div>
+            <ul class="exp-list">
+              <li>Building a complete personal portfolio website as the first assigned task</li>
+              <li>Applying HTML, CSS, and JavaScript to create responsive, animated web pages</li>
+              <li>Learning professional web development workflows and best practices</li>
+              <li>Working towards receiving an official offer letter upon task completion</li>
+            </ul>
+            <div class="exp-tech">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive Design</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-item reveal">
+          <div class="exp-marker">
+            <div class="exp-dot"></div>
+            <div class="exp-line"></div>
+          </div>
+          <div class="exp-card">
+            <div class="exp-header">
+              <div>
+                <h3>CS Student — Academic Projects</h3>
+                <p class="exp-company"><i class="fas fa-university"></i> Air University, Islamabad</p>
+              </div>
+              <span class="exp-date">Sep 2024 – Present</span>
+            </div>
+            <ul class="exp-list">
+              <li>Completed Crime Management System using C++ (graphs &amp; trees) and Java</li>
+              <li>Built a Library Management System with full CRUD operations</li>
+              <li>Studied Data Structures, OOP, and software fundamentals in depth</li>
+              <li>Collaborated with peers on coursework and problem-solving challenges</li>
+            </ul>
+            <div class="exp-tech">
+              <span>C++</span><span>Java</span><span>C#</span><span>DSA</span><span>OOP</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-item reveal">
+          <div class="exp-marker">
+            <div class="exp-dot"></div>
+          </div>
+          <div class="exp-card">
+            <div class="exp-header">
+              <div>
+                <h3>Self-Taught Web Developer</h3>
+                <p class="exp-company"><i class="fas fa-laptop-code"></i> Personal Learning</p>
+              </div>
+              <span class="exp-date">2023 – 2024</span>
+            </div>
+            <ul class="exp-list">
+              <li>Self-studied HTML, CSS, JavaScript, and Bootstrap through online resources</li>
+              <li>Built multiple small practice projects to reinforce front-end concepts</li>
+              <li>Solved logical and algorithmic problems consistently to sharpen thinking</li>
+            </ul>
+            <div class="exp-tech">
+              <span>HTML/CSS</span><span>JavaScript</span><span>Bootstrap</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="section" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Kind Words</span>
+        <h2 class="section-title">Testimonials</h2>
+      </div>
+      <div class="testimonials-grid">
+
+        <div class="testimonial-card reveal">
+          <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+          <p>"Zonash is an exceptionally motivated student. Her ability to grasp complex data structures and implement them effectively in her Crime Management System project was truly impressive for a 3rd semester student."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar"><i class="fas fa-user-circle"></i></div>
+            <div>
+              <h4>Course Instructor</h4>
+              <span>Data Structures — Air University</span>
+            </div>
+          </div>
+          <div class="stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+          <p>"Working with Zonash on group assignments is always a great experience. She brings her problem-solving mindset to every task and consistently delivers quality work ahead of deadlines."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar"><i class="fas fa-user-circle"></i></div>
+            <div>
+              <h4>University Peer</h4>
+              <span>BS CS — Air University</span>
+            </div>
+          </div>
+          <div class="stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+          <p>"Zonash shows great dedication to her internship tasks. She built a fully functional and visually polished portfolio website as her first task — demonstrating both technical ability and a strong work ethic."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar"><i class="fas fa-user-circle"></i></div>
+            <div>
+              <h4>Internship Supervisor</h4>
+              <span>Web Development Internship — 2025</span>
+            </div>
+          </div>
+          <div class="stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BLOG / ARTICLES ===== -->
+  <section class="section section-dark" id="blog">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">My Writing</span>
+        <h2 class="section-title">Blog & Articles</h2>
+      </div>
+      <div class="blog-grid">
+
+        <div class="blog-card reveal">
+          <div class="blog-meta">
+            <span class="blog-tag">C++</span>
+            <span class="blog-date">Coming Soon</span>
+          </div>
+          <h3>How I Built a Crime Pattern System Using Graphs & Trees in C++</h3>
+          <p>A deep dive into the data structures I applied while building my Crime Management System — from graph traversal to tree-based search logic.</p>
+          <a href="#" class="blog-link">Read Article <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="blog-card reveal">
+          <div class="blog-meta">
+            <span class="blog-tag">Web Dev</span>
+            <span class="blog-date">Coming Soon</span>
+          </div>
+          <h3>Building My First Portfolio: Lessons Learned as a CS Student</h3>
+          <p>What I discovered while building this portfolio — from structuring HTML correctly to making CSS animations smooth and JavaScript interactive.</p>
+          <a href="#" class="blog-link">Read Article <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="blog-card reveal">
+          <div class="blog-meta">
+            <span class="blog-tag">AI / ML</span>
+            <span class="blog-date">Coming Soon</span>
+          </div>
+          <h3>Why I'm Excited About Artificial Intelligence as a CS Student</h3>
+          <p>My personal thoughts on AI and ML — why these fields fascinate me and how I plan to develop expertise in them throughout my degree.</p>
+          <a href="#" class="blog-link">Read Article <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ACHIEVEMENTS ===== -->
+  <section class="section" id="achievements">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Recognition</span>
+        <h2 class="section-title">Achievements & Milestones</h2>
+      </div>
+      <div class="achievements-grid">
+
+        <div class="achievement-card reveal">
+          <div class="ach-icon"><i class="fas fa-university"></i></div>
+          <h3>Enrolled at Air University</h3>
+          <p>Successfully earned admission to the prestigious Air University, Islamabad for BS Computer Science — a highly competitive programme in Pakistan.</p>
+          <span class="ach-year">2024</span>
+        </div>
+
+        <div class="achievement-card reveal">
+          <div class="ach-icon"><i class="fas fa-diagram-project"></i></div>
+          <h3>Crime Management System</h3>
+          <p>Successfully implemented a fully functional Crime Pattern System using advanced C++ (graphs &amp; trees) and Java in a team academic environment.</p>
+          <span class="ach-year">Dec 2025</span>
+        </div>
+
+        <div class="achievement-card reveal">
+          <div class="ach-icon"><i class="fas fa-book"></i></div>
+          <h3>Library Management System</h3>
+          <p>Completed a comprehensive Library Management System with full CRUD functionality, search, and member management from scratch.</p>
+          <span class="ach-year">Apr 2026</span>
+        </div>
+
+        <div class="achievement-card reveal">
+          <div class="ach-icon"><i class="fas fa-briefcase"></i></div>
+          <h3>First Internship Offer</h3>
+          <p>Secured a web development internship opportunity as a 4th semester student — a testament to dedication and consistent self-learning beyond coursework.</p>
+          <span class="ach-year">2025</span>
+        </div>
+
+        <div class="achievement-card reveal">
+          <div class="ach-icon"><i class="fas fa-globe"></i></div>
+          <h3>Portfolio Website — Task 1</h3>
+          <p>Built a fully responsive, animated, multi-section portfolio website as the first internship task — demonstrating real-world web development skills.</p>
+          <span class="ach-year">Apr 2026</span>
+        </div>
+
+        <div class="achievement-card reveal">
+          <div class="ach-icon"><i class="fas fa-fire"></i></div>
+          <h3>Multilingual Developer</h3>
+          <p>Proficient in 7 programming languages and technologies: C++, Java, JavaScript, C#, HTML, CSS, and Bootstrap — all within just 4 semesters.</p>
+          <span class="ach-year">2024 – Present</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section section-dark" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Let's Talk</span>
+        <h2 class="section-title">Get In Touch</h2>
+      </div>
+      <div class="contact-wrapper">
+
+        <div class="contact-info reveal">
+          <p class="contact-intro">
+            I'm open to internship opportunities, collaborative projects, and learning
+            from experienced developers. Feel free to reach out — I'd love to connect!
+          </p>
+          <div class="contact-item">
+            <div class="ci-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <span>Email</span>
+              <a href="mailto:zunashykhan@gmail.com">zunashykhan@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="ci-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <span>Phone</span>
+              <a href="tel:+923429681541">+92 342 9681541</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="ci-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <span>Location</span>
+              <p>Rawalpindi, Punjab, Pakistan</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="ci-icon"><i class="fas fa-calendar-alt"></i></div>
+            <div>
+              <span>Date of Birth</span>
+              <p>18 January 2006</p>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/ZonashShabbir" target="_blank" class="social-btn github">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="https://linkedin.com" target="_blank" class="social-btn linkedin">
+              <i class="fab fa-linkedin-in"></i> LinkedIn
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" placeholder="your@email.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" placeholder="What is it about?" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Write your message here..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+          <div class="form-success" id="formSuccess">
+            <i class="fas fa-check-circle"></i> Message sent successfully!
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 <strong>Zonash Shabbir</strong> · Designed & Developed with ❤️</p>
+      <p class="footer-sub">BS Computer Science · Air University, Islamabad · Pakistan</p>
+    </div>
+  </footer>
+
+  <button class="back-top" id="backTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
